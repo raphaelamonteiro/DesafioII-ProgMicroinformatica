@@ -2,11 +2,23 @@
 
 
 {% block conteudo %}
-    <!-- Imagem e Texto corpo 
-    obs: alinhar = alt + z -->
+<header class="header">
+
+    <div class="box_logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" >
+    </div>
+
+    <div>
+        <div class="topnav">
+    <a class="active" href="index">Home</a>
+    <a href="quemsomos">Quem Somos</a>
+    <a href="contato">Contato</a>
+        </div>
+
+    </header>
   
         <div class="box_img">
-            <img src="./images/capa.png" aling = "center" width="899" height="370">
+            <img src="{{ url_for('static', filename='capa.png') }}" aling = "center" width="899" height="370">
         </div>
 
     <div>

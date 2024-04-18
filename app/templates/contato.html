@@ -3,6 +3,21 @@
 
 {% block conteudo %}
 
+<header class="header">
+
+  <div class="box_logo">
+      <img src="{{ url_for('static', filename='logo.png') }}" >
+  </div>
+
+  <div>
+      <div class="topnav">
+  <a class="active" href="index">Home</a>
+  <a href="quemsomos">Quem Somos</a>
+  <a href="contato">Contato</a>
+      </div>
+
+  </header>
+  
   <div class="form">
   <div class="row">
   <label for="email">Seu Email:</label>
